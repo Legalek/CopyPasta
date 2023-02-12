@@ -1,4 +1,13 @@
-<div>Test</div>
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div> Top secret message is: </div>
 <div>
-    <b>{{ message }}</b>
+    <b>{{ message.message }}</b>
+       {{ include('hello/_message.html.twig') }}
+
 </div>
+{% endblock %}
+
+
