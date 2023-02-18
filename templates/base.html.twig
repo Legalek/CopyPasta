@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="">
+<html class="dark">
 	<head>
 		<meta charset="UTF-8">
 		<title>
@@ -34,19 +34,21 @@ darkMode: 'class'
 
 			<div class="text-right">
 				<div class="text-sm text-gray-400 dark:text-gray-500">
-					Miejsce na login i rejestracje srutututu
+					<div>Miejsce na login i rejestracje srutututu</div>
+					<div>
+						<a href="{{ path('app_micro_post_add') }}">Dodaj nowy post</a>
+					</div>
 				</div>
 			</div>
-            </div>
+		</div>
 
-			<div class="w-full md:w-2/3 mx-auto">
+		<div class="w-full md:w-2/3 mx-auto">
 
-				{% for message in app.flashes('success') %}
-					<div class="rounded-md p-2 border-green-300 bg-green-50 border dark:border-green-600 dark:bg-green-700 dark:text-white mb-4">{{ message }}</div>
-				{% endfor %}
-				{% block body %}{% endblock %}
+			{% for message in app.flashes('success') %}
+				<div class="rounded-md p-2 border-green-300 bg-green-50 border dark:border-green-600 dark:bg-green-700 dark:text-white mb-4">{{ message }}</div>
+			{% endfor %}
+			{% block body %}{% endblock %}
 
-			</div>
-		</body>
+		</div>
 	</body>
-</html>
+</html></body></html>
